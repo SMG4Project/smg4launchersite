@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="stylesheet.css?v=31">
+
+   <meta property="og:title" content="SMG4 Launcher">
+   <meta property="og:url" content="https://<?= $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>">
+   <meta property="og:site_name" content="The SMG4 Launcher Official Site">
+   <meta property="og:image" content="Logo.png">
+   <meta property="og:description" content="DOWNLOAD">
+   <meta property="og:type" content="website">
+
+   <meta name="twitter:card" content="photo">
+   <meta name="twitter:title" content="SMG4 Launcher">
+   <meta name="twitter:site" content="The SMG4 Launcher Official Site">
+   <meta name="twitter:description" content="The SMG4 Launcher Official Site">
+   <meta name="twitter:image:src" content="Logo.png">
+
+   <title>SMG4 Launcher Download</title>
+</head>
+<body>
+    <header>
+        <img src="Logo.png"><h2>SMG4 Launcher Download</h2><h3></h3>
+    </header>
+    <div class="container">
+	    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script>
+    <ul>
+        <img src="Screenshot.png">
+        <a href='https://github.com/SMG4Project/smg4launcherapp/releases/tag/1.0' target='_blank'>Download 1.0</a> <br>
+        <a href='https://github.com/SMG4Project/smg4launcherapp' target='_blank'>Download 1.0</a> <br>
+    </ul>
+    <script>plausible('pageview', {
+                props: { next: `wasm=${!!window.WebAssembly}; m=${!!window.MediaSource || !!window.ManagedMediaSource}, hls=${!!document.createElement('video').canPlayType('application/vnd.apple.mpegURL')}, hev=${((window.MediaSource||window.ManagedMediaSource)?.isTypeSupported('video/mp4; codecs="hev1.1.6.L93.B0"') || (window.MediaSource||window.ManagedMediaSource)?.isTypeSupported('video/mp4; codecs="hev1"'))}`
+            }
+     })</script>
+</body>
+</html>
